@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PPT 翻译工具 · 使用指南</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>PPT 批量翻译工具</h1>
+            <p>一站式批量翻译幻灯片</p>
+            <a class="cta" href="#steps">查看步骤</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="two-column">
+            <div>
+                <h2>核心功能</h2>
+                <ul>
+                    <li><strong>多后端支持：</strong>内置自建 Google(内置API)、用户自定义API如(Google API、OpenAI、DeepL、有道)</li>
+                    <li><strong>翻译模式：</strong>支持追加中译文或替换原文(分别对应"追加风格"的"inline"和"newline")</li>
+                    <li><strong>翻译备注：</strong>支持翻译备注</li>
+                </ul>
+            </div>
+            <figure>
+                <img src="images/placeholder-hero.png" alt="PPT翻译软件主界面">
+                <figcaption>PPT翻译软件主界面</figcaption>
+            </figure>
+        </section>
+
+        <section id="steps">
+            <h2>使用步骤</h2>
+            <div class="steps-grid">
+                <article>
+                    <img src="images/placeholder-step1.png" alt="选择输入和输出文件的示意图">
+                    <h3>STEP 1 · 准备文件</h3>
+                    <p>点击“浏览”选择输入 PPTX，默认输出会添加 <code>-translated</code> 后缀，可自行修改。</p>
+                </article>
+                <article>
+                    <img src="images/placeholder-step2.png" alt="选择翻译语言">
+                    <h3>STEP 2 · 选择后端与语言</h3>
+                    <p>根据需求选择翻译后端、源/目标语言及翻译模式，必要时填入 API Key。</p>
+                </article>
+                <!-- <article>
+                    <img src="images/placeholder-step3.png" alt="激活对话框输入激活码的示意图">
+                    <h3>STEP 3 · 激活程序</h3>
+                    <p>第三次点击“开始翻译”时会弹出激活框。复制设备码，使用 <code>activation_helper.py</code> 生成激活码并输入确认。</p>
+                </article> -->
+                <article>
+                    <img src="images/placeholder-step3.png" alt="翻译日志与进度展示的示意图">
+                    <h3>STEP 3 · 执行翻译</h3>
+                    <p>激活成功后再次点击即可开始翻译。下方日志窗口会显示进度与重试信息。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="two-column">
+            <figure>
+                <img src="images/placeholder-hero.png" alt="翻译界面示意图">
+                <figcaption>翻译主界面示意图（占位图）。</figcaption>
+            </figure>
+            <div>
+                <h2>常见问题</h2>
+                <details>
+                    <summary>是否需要激活？</summary>
+                    <p>由于软件使用自建的翻译API，存在一定成本。软件默认可以免费使用3次，使用3次后，将弹出激活窗口</p>
+                </details>
+                <details>
+                    <summary>翻译失败如何处理？</summary>
+                    <p>程序会按照重试次数与等待间隔自动重试，仍失败会在日志中记录并跳过该段落。</p>
+                </details>
+                <details>
+                    <summary>如何修改追加样式？</summary>
+                    <p>在“模式”选择 <strong>append</strong> 时可在“追加风格”中设为同段同行或换行显示。</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="two-column">
+            <figure>
+                <img src="images/scan_code.jpg" alt="闲鱼二维码">
+                <figcaption>翻译主界面示意图（占位图）。</figcaption>
+            </figure>
+            <div>
+                <<h2>如何激活</h2>
+                <details>
+                    <summary>step1:如何获取激活码</summary>
+                    <p>软件使用3次后，将弹出激活窗口，将激活窗口的设备码发给闲鱼商家，商家回复激活码，即可激活</p>
+                </details>
+                <details>
+                    <summary>step2:激活码如何使用</summary>
+                    <p>复制输出的激活码并填入对话框，点击“确认”。</p>
+                </details>
+                <details>
+                    <summary>step3:激活成功</summary>
+                    <p>激活成功后将不再弹出激活提示。</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>批量翻译工具 </p>
+            <button id="back-to-top" class="hidden">返回顶部</button>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
